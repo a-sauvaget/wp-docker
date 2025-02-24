@@ -1,5 +1,6 @@
 services:
   wordpress:
+    # Dernière version de WordPress + dernière version de PHP
     image: wordpress:latest
     container_name: wordpress
     volumes:

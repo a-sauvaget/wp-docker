@@ -74,5 +74,5 @@ docker exec -it wordpress wp core update
 - Création d'un nouvel utilisateur WordPress :
 
 ````bash
-docker exec -it wordpress wp user create <username> <email> --role=a```dministrator --user_pass=<password>
+docker exec -it wordpress wp user create <username> <email> --role=a```administrator --user_pass=<password>
 ````

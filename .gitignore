@@ -13,3 +13,5 @@ logs/*
 # Ignorer tout le dossier wordpress
 wordpress/*
 !wordpress/.gitkeep
+
+.vs-code

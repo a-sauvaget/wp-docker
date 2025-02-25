@@ -4,22 +4,22 @@ Docker rend le développement local de WordPress beaucoup plus fluide et efficac
 
 ## Installation
 
-1. Lancer la commande :
-
-```bash
-docker compose up
-```
-
-2. Une fois que tout est ok, lancer la commande :
+1. Mettre à jour les droits sur le dossier WordPress :
 
 ```bash
 cd /path/to/project
 sudo chown -R {your-username}:{your-username} wordpress
 ```
 
-Cette commande est nécessaire car la façon dont Docker gère les autorisations de fichiers et de la façon dont l'image Docker WordPress est construite. Sans ce changement, on ne peut pas facilement éditer les fichiers du site WordPress depuis l'extérieur du conteneur Docker.
+Cette commande permet de modifier les autorisations des fichiers WordPress pour qu'ils soient accessibles en écriture, ce qui est nécessaire pour travailler sur les fichiers depuis l'extérieur du conteneur Docker.
 
-3. Terminer la création du site
+2. Lancer les conteneurs Docker :
+
+```bash
+docker compose up
+```
+
+1. Terminer la configuration du site :
 
 Ouvrir un navigateur web vers http://localhost:8080, puis terminer l'installation du site.
 

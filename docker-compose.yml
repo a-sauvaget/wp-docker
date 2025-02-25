@@ -19,7 +19,8 @@ services:
       - 8080:80
 
   db:
-    image: mariadb
+    # LTS - 29 Mai 2029
+    image: mariadb:11.4
     container_name: db
     volumes:
       - db_data:/var/lib/mysql
@@ -28,7 +29,6 @@ services:
       - MYSQL_USER=root
       - MYSQL_PASSWORD=password
       - MYSQL_DATABASE=wordpress
-        MYSQL_RANDOM_ROOT_PASSWORD= '1'
     restart: always
 
   phpmyadmin:

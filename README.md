@@ -17,7 +17,7 @@ cd /path/to/project
 sudo chown -R {your-username}:{your-username} wordpress
 ```
 
-Cette commande est nécessaire car la façon dont Docker gère les autorisations de fichiers et de la façon dont l'image Docker wordpress est construite. Sans ce changement, on ne peut pas facilement éditer les fichiers du site WordPress depuis l'extérieur du conteneur Docker.
+Cette commande est nécessaire car la façon dont Docker gère les autorisations de fichiers et de la façon dont l'image Docker WordPress est construite. Sans ce changement, on ne peut pas facilement éditer les fichiers du site WordPress depuis l'extérieur du conteneur Docker.
 
 3. Terminer la création du site
 
@@ -33,7 +33,7 @@ Ce projet Docker pour WordPress inclut les services suivants :
 
 - **MariaDB**
 
-  La dernière version de MariaDB.
+  La version LTS de MariaDB.
 
 - **phpMyAdmin**
 

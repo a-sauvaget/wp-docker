@@ -10,11 +10,6 @@ logs/*
 # Ignorer tous les fichiers .tmp
 *.tmp
 
-# Ignorer tout le dossier wordpress sauf le dossier content
-/wordpress/*
-!/wordpress/wp-content/
-
-
-# Ignorer les dossiers languages et uploads dans wp-content
-/wordpress/content/languages
-/wordpress/content/uploads
+# Ignorer tout le dossier wordpress
+wordpress/*
+!wordpress/.gitkeep

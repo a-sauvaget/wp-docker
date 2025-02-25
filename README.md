@@ -19,9 +19,25 @@ Cette commande permet de modifier les autorisations des fichiers WordPress pour 
 docker compose up
 ```
 
-1. Terminer la configuration du site :
+3. Terminer la configuration du site :
 
 Ouvrir un navigateur web vers http://localhost:8080, puis terminer l'installation du site.
+
+4. Installer des plugins (Optionnel)
+
+Rendre le script executable :
+
+```bash
+sudo chmod +x theme_and_plugin_setup.sh
+```
+
+Lancer le script :
+
+```bash
+./theme_and_plugin_setup.sh
+```
+
+Lance l'installation des plugins intéressant pour le développement et supprime des plugins et thèmes par défaut de l'image WordPress.
 
 ## Qu'est-ce qui est inclus ?
 

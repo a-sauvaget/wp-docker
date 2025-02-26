@@ -32,13 +32,13 @@ Ouvrir un navigateur web vers http://localhost:8080, puis terminer l'installatio
 Rendre le script executable :
 
 ```bash
-sudo chmod +x theme_and_plugin_setup.sh
+sudo chmod +x setup.sh
 ```
 
 Lancer le script :
 
 ```bash
-./theme_and_plugin_setup.sh
+./setup.sh
 ```
 
 Lance l'installation des plugins intéressant pour le développement et supprime des plugins et thèmes par défaut de l'image WordPress.

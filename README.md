@@ -25,9 +25,9 @@ docker compose up -d
 
 4. Terminer la configuration du site :
 
-Ouvrir un navigateur web vers http://localhost:8080, puis terminer l'installation du site.
+Ouvrir un navigateur web vers http://localhost:8080, puis terminer l'installation du site manuellement ou passer à l'étape 5.
 
-5. Installer des plugins (Optionnel)
+5. Installer des plugins, themes, réglages (Optionnel)
 
 Rendre le script executable :
 

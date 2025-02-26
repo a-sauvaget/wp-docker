@@ -3,6 +3,7 @@ services:
     container_name: wordpress
     volumes:
       - ./wordpress:/var/www/html
+      - .env:/tmp/.env
     environment:
       - WORDPRESS_DB_NAME=${MYSQL_DATABASE}
       - WORDPRESS_TABLE_PREFIX=${WORDPRESS_TABLE_PREFIX}

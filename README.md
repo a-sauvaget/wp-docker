@@ -13,17 +13,21 @@ sudo chown -R {your-username}:{your-username} wordpress
 
 Cette commande permet de modifier les autorisations des fichiers WordPress pour qu'ils soient accessibles en écriture, ce qui est nécessaire pour travailler sur les fichiers depuis l'extérieur du conteneur Docker.
 
-2. Lancer les conteneurs Docker :
+2. Renseigner le fichier .env
+
+À partir du fichier `.env.sample`, renseignez vos propre variables d'environnement.
+
+3. Lancer les conteneurs Docker :
 
 ```bash
-docker compose up
+docker compose up -d
 ```
 
-3. Terminer la configuration du site :
+4. Terminer la configuration du site :
 
 Ouvrir un navigateur web vers http://localhost:8080, puis terminer l'installation du site.
 
-4. Installer des plugins (Optionnel)
+5. Installer des plugins (Optionnel)
 
 Rendre le script executable :
 

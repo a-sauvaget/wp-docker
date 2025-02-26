@@ -39,13 +39,8 @@ wp option get WPLANG
 wp language plugin install --all "$WP_LOCALE"
 wp language theme install --all "$WP_LOCALE"
 
-# Activer le mode debug
-wp option update wp_debug 1
-wp option update wp_debug_log 1
-wp option update wp_debug_display 0
-
 # Désactivation du cache
-wp option update blog_public 0 # Désactive l'indexation par les moteurs de recherche
+wp option update blog_public false --raw # Désactive l'indexation par les moteurs de recherche
 wp transient delete --all      # Supprime tous les caches temporaires
 wp cache flush                 # Vide le cache WP
 
@@ -54,5 +49,19 @@ wp option update timezone_string "$TIMEZONE"
 wp option update date_format "$DATE_FORMAT"
 wp option update time_format "$TIME_FORMAT"
 
+# Activer le mode debug
+wp config set WP_DEBUG true --raw
+wp config set WP_DEBUG_LOG true --raw
+wp config set WP_DEBUG_DISPLAY false --raw
+
+# Définir l'environnement (local, staging, production...)
+wp config set WP_ENVIRONMENT_TYPE "development"
+
 # Désactiver l'éditeur de fichiers dans l'admin
-wp option update disallow_file_edit 1
+wp config set DISALLOW_FILE_EDIT true --raw
+
+# Activer le mode debug pour les scripts et styles
+wp config set SCRIPT_DEBUG true --raw
+
+# Désactiver la concaténation des scripts JS
+wp config set CONCATENATE_SCRIPTS false --raw

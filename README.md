@@ -1,6 +1,6 @@
 # wp-docker
 
-Docker rend le développement local de WordPress beaucoup plus fluide et efficace.
+Docker rend le développement local de themes et/ou plugins WordPress beaucoup plus fluide et efficace.
 
 ## Installation
 

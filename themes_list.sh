@@ -6,3 +6,4 @@ wp theme delete twentytwentyfour
 
 # Activer par défaut le theme twentytwentyfive
 wp theme activate twentytwentyfive
+wp theme update twentytwentyfive

@@ -41,8 +41,8 @@ wp language theme install --all "$WP_LOCALE"
 
 # Désactivation du cache
 wp option update blog_public false --raw # Désactive l'indexation par les moteurs de recherche
-wp transient delete --all      # Supprime tous les caches temporaires
-wp cache flush                 # Vide le cache WP
+wp transient delete --all                # Supprime tous les caches temporaires
+wp cache flush                           # Vide le cache WP
 
 # Définition du fuseau horaire + format de date
 wp option update timezone_string "$TIMEZONE"
@@ -56,6 +56,7 @@ wp config set WP_DEBUG_DISPLAY false --raw
 
 # Définir l'environnement (local, staging, production...)
 wp config set WP_ENVIRONMENT_TYPE "development"
+wp config set WP_DEVELOPMENT_MODE "all"
 
 # Désactiver l'éditeur de fichiers dans l'admin
 wp config set DISALLOW_FILE_EDIT true --raw

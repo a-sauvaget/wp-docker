@@ -40,7 +40,7 @@ wp language plugin install --all "$WP_LOCALE"
 wp language theme install --all "$WP_LOCALE"
 
 # Désactivation du cache
-wp option update blog_public false --raw # Désactive l'indexation par les moteurs de recherche
+wp option update blog_public false       # Désactive l'indexation par les moteurs de recherche
 wp transient delete --all                # Supprime tous les caches temporaires
 wp cache flush                           # Vide le cache WP
 
